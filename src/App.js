@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Callback from './Pages/PageCallback/Callback';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import OneProduct from "./Pages/OneProduct/OneProduct";
+import PageTest from "./Pages/PagesTest/PagesTest"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router basename='4p22-final-project-bustrova-viktoriia'>
+      <Routes>
+          <Route index path={'/'} element={<Home />} />
+          <Route path={'Callback'} element={<Callback />} />
+          <Route path={'PageTest'} element={<PageTest />} />
+          <Route path={'PageTest/OneProduct'}>
+            <Route path={':userId'} element={<OneProduct />} />
+          </Route>
+      </Routes>
+    </Router>
     </div>
   );
 }

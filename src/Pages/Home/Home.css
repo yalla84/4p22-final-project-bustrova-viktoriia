@@ -1,0 +1,38 @@
+.Home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 150px 175px;
+}
+
+.Home-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .Home {
+        gap: calc(20 / 768 * 100vw);
+        padding: calc(150 / 768 * 100vw) calc(65 / 768 * 100vw);
+    }
+    
+    .Home-img {
+        width: calc(300 / 768 * 100vw);
+        height: calc(300 / 768 * 100vw);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .Home {
+        gap: calc(20 / 1024 * 100vw);
+        padding: calc(150 / 1024 * 100vw) calc(40 / 1024 * 100vw);
+    }
+    
+    .Home-img {
+        width: calc(300 / 1024 * 100vw);
+        height: calc(300 / 1024 * 100vw);
+    }
+}
+
+

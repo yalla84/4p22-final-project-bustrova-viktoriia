@@ -1,0 +1,44 @@
+.Filter-container {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #category-list {
+    padding: 5px;
+    font-size: 15px;
+    color: #787878;
+    font-weight: 600;
+  }
+
+  .Filter-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #787878;
+  }
+
+  .Filter-select {
+    color: #787878;
+    border-radius: 5px;
+  }
+
+  .Card-container {
+    display: flex;
+    padding: 200px 35px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Page-up {
+    color: white;
+    position: relative;
+    top: -50px;
+    margin-left: 110px;
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:gray;
+}

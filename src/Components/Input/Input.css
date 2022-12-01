@@ -1,0 +1,30 @@
+.CommonInput {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    border-radius: 0;
+    padding: 7px 20px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #787878;
+}
+
+.CommonInput::placeholder {
+    color: #CCCCCC;
+}
+
+@media screen and (max-width: 768px) {
+    .CommonInput {
+        height: calc(35 / 768 * 100vw);
+        padding: calc(7 / 768 * 100vw) calc(20 / 768 * 100vw);
+        font-size: calc(15 / 768 * 100vw);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .CommonInput {
+        height: calc(35 / 1024 * 100vw);
+        padding: calc(7 / 1024 * 100vw) calc(20 / 768 * 100vw);
+        font-size: calc(15 / 1024 * 100vw);
+    }
+}
